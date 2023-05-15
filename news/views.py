@@ -18,7 +18,7 @@ def main(request):
     else:
         all_news = News.objects.all()
 
-    paginator = Paginator(all_news, 5)
+    paginator = Paginator(all_news, 6)
     page_num = request.GET.get('page', 1)
     page_objects = paginator.get_page(page_num)
 
@@ -40,7 +40,6 @@ def details(request, news_id):
     return render(request, 'news/details.html', context=news_data)
 
 
-@login_required
 def category(request, category_id):
     searched = request.GET.get('search_word')
     if searched:
@@ -48,7 +47,7 @@ def category(request, category_id):
     else:
         news_list = News.objects.filter(category_id=category_id)
 
-    paginator = Paginator(news_list, 5)
+    paginator = Paginator(news_list, 6)
     page_num = request.GET.get('page', 1)
     page_objects = paginator.get_page(page_num)
 
@@ -123,3 +122,22 @@ def add_news(request):
         else:
             messages.error(request, 'Something went wrong')
             return render(request, 'news/news_add.html', {'form': form})
+
+
+@login_required
+def profile(request):
+    return render(request, 'news/profile.html')
+
+
+@login_required
+def my_news(request):
+    user_news = News.objects.filter(publisher=request.user)
+    paginator = Paginator(user_news, 6)
+    page_num = request.GET.get('page', 1)
+    page_objects = paginator.get_page(page_num)
+
+    my_data = {
+        'page_obj': page_objects
+    }
+
+    return render(request, 'news/index.html', context=my_data)
