@@ -1,7 +1,6 @@
 from django import forms
-from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .models import News
+from .models import News, User
 
 
 class LoginForm(forms.Form):
@@ -11,8 +10,8 @@ class LoginForm(forms.Form):
 
 class RegisterForm(UserCreationForm):
     class Meta:
-        model=User
-        fields = ['first_name', 'last_name', 'username', 'password1', 'password2']
+        model = User
+        fields = ['first_name', 'last_name', 'avatar', 'username', 'password1', 'password2']
 
 
 class NewsAddForm(forms.ModelForm):
