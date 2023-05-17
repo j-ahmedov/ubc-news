@@ -5,7 +5,7 @@ from .models import News, Category, User
 from django.core.paginator import Paginator
 from django.contrib import messages
 
-from .forms import LoginForm, RegisterForm,  NewsAddForm
+from .forms import LoginForm, RegisterForm, UpdateUserForm,  NewsAddForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login as auth_login, authenticate, logout as auth_logout
 
@@ -149,3 +149,20 @@ def my_news(request):
 
     return render(request, 'news/index.html', context=my_data)
 
+
+def update_user(request):
+    if request.method == 'GET':
+        form = UpdateUserForm(instance=request.user)
+        return render(request, 'news/update.html', {'form': form})
+
+    if request.method == 'POST':
+        form = UpdateUserForm(request.POST, instance=request.user)
+        if form.is_valid():
+            user = form.save(commit=False)
+            user.username = user.username.lower()
+            user.save()
+            messages.success(request, 'User has been updated successfully.')
+            auth_login(request, user)
+            return redirect('main')
+        else:
+            return render(request, 'news/update.html', {'form': form})

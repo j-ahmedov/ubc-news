@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a93da12e-4bb5-40b4-8096-032de4b36202" name="Changes" comment="db and migrations">
-      <change afterPath="$PROJECT_DIR$/news/static/news/images/avatar_image.png" afterDir="false" />
+    <list default="true" id="a93da12e-4bb5-40b4-8096-032de4b36202" name="Changes" comment="changes with profile and db">
+      <change afterPath="$PROJECT_DIR$/news/templates/news/update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/templates/news/inc/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/news/inc/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/views.py" afterDir="false" />
     </list>
@@ -103,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684214028883</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changes with profile and db">
+      <created>1684299920890</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684299920890</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +133,7 @@
     <MESSAGE value="added new features" />
     <MESSAGE value="changes in project structure" />
     <MESSAGE value="db and migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="db and migrations" />
+    <MESSAGE value="changes with profile and db" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes with profile and db" />
   </component>
 </project>
