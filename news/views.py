@@ -1,7 +1,7 @@
 from pyexpat.errors import messages
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .models import News, Category
+from .models import News, Category, User
 from django.core.paginator import Paginator
 from django.contrib import messages
 
@@ -125,8 +125,15 @@ def add_news(request):
 
 
 @login_required
-def profile(request):
-    return render(request, 'news/profile.html')
+def profile(request, user_id):
+
+    user = User.objects.get(id=user_id)
+
+    user_data = {
+        'user': user
+    }
+
+    return render(request, 'news/profile.html', context=user_data)
 
 
 @login_required
@@ -141,3 +148,4 @@ def my_news(request):
     }
 
     return render(request, 'news/index.html', context=my_data)
+

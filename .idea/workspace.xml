@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a93da12e-4bb5-40b4-8096-032de4b36202" name="Changes" comment="added new features">
+    <list default="true" id="a93da12e-4bb5-40b4-8096-032de4b36202" name="Changes" comment="db and migrations">
+      <change afterPath="$PROJECT_DIR$/news/static/news/images/avatar_image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UBC_News/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/UBC_News/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/migrations/0002_rename_categories_category_alter_category_options_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/migrations/0003_news_updated_date_alter_news_published_date.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/migrations/0004_alter_category_options_news_publisher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/migrations/0005_alter_news_publisher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/templates/news/inc/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/news/inc/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +50,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\web_development_course\UBC-News\news\static\news\images" />
       <recent name="D:\web_development_course\UBC-News\news\templates\news" />
     </key>
   </component>
@@ -93,7 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684128070772</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changes in project structure">
+      <created>1684213927900</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684213927900</updated>
+    </task>
+    <task id="LOCAL-00005" summary="db and migrations">
+      <created>1684214028883</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684214028883</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +124,8 @@
     <MESSAGE value="added news add form" />
     <MESSAGE value="added styles" />
     <MESSAGE value="added new features" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new features" />
+    <MESSAGE value="changes in project structure" />
+    <MESSAGE value="db and migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="db and migrations" />
   </component>
 </project>
