@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a93da12e-4bb5-40b4-8096-032de4b36202" name="Changes" comment="changes with profile and db">
-      <change afterPath="$PROJECT_DIR$/news/templates/news/update.html" afterDir="false" />
+    <list default="true" id="a93da12e-4bb5-40b4-8096-032de4b36202" name="Changes" comment="form changes">
+      <change afterPath="$PROJECT_DIR$/news/static/news/styles/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/UBC-News.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UBC-News.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/templates/news/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/news/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/templates/news/inc/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/news/inc/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/templates/news/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/news/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/templates/news/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/templates/news/update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/views.py" afterDir="false" />
     </list>
@@ -43,7 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DevProjects/Python_projects/usmonovWebsite&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/web_development_course/UBC-News&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -67,6 +72,7 @@
       <workItem from="1683690692229" duration="3984000" />
       <workItem from="1683701863912" duration="15000" />
       <workItem from="1684008202851" duration="58000" />
+      <workItem from="1684424554566" duration="2293000" />
     </task>
     <task id="LOCAL-00001" summary="added news add form">
       <created>1683866855107</created>
@@ -110,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684299920890</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="form changes">
+      <created>1684302657606</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684302657606</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +147,7 @@
     <MESSAGE value="changes in project structure" />
     <MESSAGE value="db and migrations" />
     <MESSAGE value="changes with profile and db" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes with profile and db" />
+    <MESSAGE value="form changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="form changes" />
   </component>
 </project>

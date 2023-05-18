@@ -1,5 +1,5 @@
 from pyexpat.errors import messages
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from .models import News, Category, User
 from django.core.paginator import Paginator
@@ -150,13 +150,16 @@ def my_news(request):
     return render(request, 'news/index.html', context=my_data)
 
 
-def update_user(request):
+@login_required
+def update_user(request, user_id):
+    user = get_object_or_404(User, id=user_id)
+
     if request.method == 'GET':
-        form = UpdateUserForm(instance=request.user)
+        form = UpdateUserForm(instance=user)
         return render(request, 'news/update.html', {'form': form})
 
     if request.method == 'POST':
-        form = UpdateUserForm(request.POST, instance=request.user)
+        form = UpdateUserForm(request.POST, request.FILES, instance=user)
         if form.is_valid():
             user = form.save(commit=False)
             user.username = user.username.lower()

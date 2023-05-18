@@ -11,5 +11,7 @@
         <h3>Lastname Name: {{ user.last_name }}</h3>
         <h3>Username: {{ user.username }}</h3>
         <h3>Email: {{ user.email }}</h3>
+
+        <p><a href="{% url 'update_user' request.user.id %}">Update User</a></p>
     </div>
 {% endblock %}
